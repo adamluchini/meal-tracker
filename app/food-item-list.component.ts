@@ -3,11 +3,12 @@ import { FoodItem } from './food-item.model';
 import { FoodItemComponent } from './food-item.component';
 import { FoodItemEditComponent } from './food-item-edit.component';
 import { CaloriePipe } from './calorie.pipe';
+import { FoodItemNewComponent } from './food-item-new.component';
 
 @Component ({
   selector: 'food-item-list',
   inputs: ['foodItemList'],
-  directives: [FoodItemComponent, FoodItemEditComponent],
+  directives: [FoodItemComponent, FoodItemEditComponent, FoodItemNewComponent],
   pipes: [CaloriePipe],
   template: `
   <select (change)="onChange($event.target.value)">

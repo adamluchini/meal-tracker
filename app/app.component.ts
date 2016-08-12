@@ -6,14 +6,14 @@ import { FoodItemListComponent } from './food-item-list.component';
   selector: 'my-app',
   directives: [FoodItemListComponent],
   template: `
-  <div class="container">
-    <p>Calories Consumed Today:  {{calorieTotal()}}</p>
-  </div>
   <div class = "container">
     <h3>
       <food-item-list [foodItemList] = "foodItems">
       </food-item-list>
     </h3>
+  </div>
+  <div class="container">
+    <h2 class ="calories">Calories Consumed Today:  {{calorieTotal()}}</h2>
   </div>
   `
 })

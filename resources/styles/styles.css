@@ -1,0 +1,11 @@
+.calories {
+  color: red;
+}
+
+.selected {
+  font-style: italic;
+}
+
+.page-header {
+  text-align: center;
+}
