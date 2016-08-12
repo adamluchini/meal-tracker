@@ -7,11 +7,8 @@ import { FoodItemComponent } from './food-item.component';
   inputs: ['foodItemList'],
   directives: [FoodItemComponent],
   template: '
-  <food-item-display *ngFor="#currentItem of foodItemList | caloricContent:filterCaloricContent"
-(click)="itemClicked(currentItem)"
-[class.selected]="currentItem === selectedFoodItem"
-[foodItem] = "currentItem">
-</food-item-display>
+  <food-item-display *ngFor="#currentItem of foodItemList">
+  </food-item-display>
 
   '
 })
